@@ -64,7 +64,7 @@ export const YOGIRI_PROFILE = {
         'Multi-container deployment bridging containerized backend calls with host-level LLM services.',
         'Reliabilitas eksekusi mencapai 99.4% pada alur multi-agent workflow.'
       ],
-      github: 'https://github.com/Yogiri19'
+      github: 'https://github.com/Yogiri19/LLM-Powered-Multi-Agent-System'
     },
     {
       title: 'Enterprise Knowledge Assistant (RAG System)',
@@ -79,7 +79,7 @@ export const YOGIRI_PROFILE = {
         'Multi-turn conversational memory with citation mapping back to original source paragraphs.',
         'Latensi semantic retrieval kurang dari 450ms pada repositori 10.000+ chunks.'
       ],
-      github: 'https://github.com/Yogiri19'
+      github: 'https://github.com/Yogiri19/Enterprise-Knowledge-Assistant-RAG-System-'
     },
     {
       title: 'Vegetable Object Detection & Classification',
@@ -93,7 +93,7 @@ export const YOGIRI_PROFILE = {
         'Interactive Streamlit inference application with dynamic bounding box overlay rendering.',
         'Evaluasi otomatis menghasilkan laporan IoU (Intersection over Union) dan precision-recall.'
       ],
-      github: 'https://github.com/Yogiri19'
+      github: 'https://github.com/Yogiri19/Vegetable-Object-Detection'
     }
   ]
 };

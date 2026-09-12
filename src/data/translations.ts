@@ -13,6 +13,7 @@ export interface ProjectData {
   metrics: string;
   githubUrl?: string;
   liveUrl?: string;
+  videoUrl?: string;
 }
 
 export interface TranslationData {
@@ -65,6 +66,7 @@ export interface TranslationData {
       keyAchievements: string;
       technologiesUsed: string;
       viewOnGithub: string;
+      videoDemoTitle: string;
       close: string;
     };
   };
@@ -158,6 +160,7 @@ export const translations: Record<Language, TranslationData> = {
         keyAchievements: 'Pencapaian Teknis Utama',
         technologiesUsed: 'Teknologi yang Digunakan',
         viewOnGithub: 'Lihat di GitHub',
+        videoDemoTitle: 'Demo Video Interaktif',
         close: 'Tutup',
       },
       items: [
@@ -184,7 +187,8 @@ export const translations: Record<Language, TranslationData> = {
             'Docker Compose Multi-Container Orchestration'
           ],
           metrics: '99.4% keandalan eksekusi alur kerja multi-agent',
-          githubUrl: 'https://github.com/Yogiri19'
+          githubUrl: 'https://github.com/Yogiri19/LLM-Powered-Multi-Agent-System',
+          videoUrl: './videos/orchestrator_demo.mp4'
         },
         {
           id: 'rag-assistant',
@@ -209,7 +213,7 @@ export const translations: Record<Language, TranslationData> = {
             'ChromaDB Vector Store dengan penyimpanan persisten'
           ],
           metrics: '< 450ms latensi pencarian semantik pada 10.000+ chunks',
-          githubUrl: 'https://github.com/Yogiri19'
+          githubUrl: 'https://github.com/Yogiri19/Enterprise-Knowledge-Assistant-RAG-System-'
         },
         {
           id: 'vegetable-detection',
@@ -234,7 +238,8 @@ export const translations: Record<Language, TranslationData> = {
             'Augmentasi data melalui torchvision transforms'
           ],
           metrics: 'Lokalisasi presisi tinggi dengan inferensi real-time pada edge device',
-          githubUrl: 'https://github.com/Yogiri19'
+          githubUrl: 'https://github.com/Yogiri19/Vegetable-Object-Detection',
+          videoUrl: './videos/vegetable_demo.mp4'
         }
       ]
     },
@@ -342,6 +347,7 @@ Apa yang ingin Anda ketahui tentang Yogiri?`,
         keyAchievements: 'Key Engineering Achievements',
         technologiesUsed: 'Technologies Used',
         viewOnGithub: 'View on GitHub',
+        videoDemoTitle: 'Interactive Video Demo',
         close: 'Close',
       },
       items: [
@@ -368,7 +374,8 @@ Apa yang ingin Anda ketahui tentang Yogiri?`,
             'Docker Compose Multi-Container Orchestration'
           ],
           metrics: '99.4% task execution reliability across multi-agent workflows',
-          githubUrl: 'https://github.com/Yogiri19'
+          githubUrl: 'https://github.com/Yogiri19/LLM-Powered-Multi-Agent-System',
+          videoUrl: './videos/orchestrator_demo.mp4'
         },
         {
           id: 'rag-assistant',
@@ -393,7 +400,7 @@ Apa yang ingin Anda ketahui tentang Yogiri?`,
             'ChromaDB Vector Store with persistent storage'
           ],
           metrics: '< 450ms semantic retrieval latency on 10k+ chunk repositories',
-          githubUrl: 'https://github.com/Yogiri19'
+          githubUrl: 'https://github.com/Yogiri19/Enterprise-Knowledge-Assistant-RAG-System-'
         },
         {
           id: 'vegetable-detection',
@@ -418,7 +425,8 @@ Apa yang ingin Anda ketahui tentang Yogiri?`,
             'Data augmentation via torchvision transforms'
           ],
           metrics: 'High precision localization with real-time inference on edge devices',
-          githubUrl: 'https://github.com/Yogiri19'
+          githubUrl: 'https://github.com/Yogiri19/Vegetable-Object-Detection',
+          videoUrl: './videos/vegetable_demo.mp4'
         }
       ]
     },

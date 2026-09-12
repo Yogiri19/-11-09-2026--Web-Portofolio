@@ -12,7 +12,8 @@ import {
   CheckCircle2,
   Download,
   X,
-  Sparkles
+  Sparkles,
+  Play
 } from 'lucide-react';
 import { AskYogiriModal } from './components/AskYogiriModal';
 import { translations, Language } from './data/translations';
@@ -503,7 +504,7 @@ export default function App() {
               <Mail size={18} />
             </a>
             <a
-              href="https://yogiri19.github.io/Website-Portofolio/"
+              href="https://yogiri.web.id"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Portfolio Website"
@@ -605,7 +606,15 @@ export default function App() {
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between text-xs font-mono text-white/50">
-                    <span>{project.category}</span>
+                    <div className="flex items-center gap-2">
+                      <span>{project.category}</span>
+                      {project.videoUrl && (
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-400/15 text-emerald-400 border border-emerald-400/30 flex items-center gap-1">
+                          <Play size={8} className="fill-emerald-400 text-emerald-400" />
+                          <span>Demo</span>
+                        </span>
+                      )}
+                    </div>
                     <ArrowRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>
                   <h3 className="text-2xl font-medium text-white group-hover:text-white transition-colors">
@@ -769,6 +778,31 @@ export default function App() {
             <p className="text-white/80 text-sm leading-relaxed">
               {selectedProject.description}
             </p>
+
+            {/* Live Interactive Video Demo Player */}
+            {selectedProject.videoUrl && (
+              <div className="space-y-2.5 pt-1">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <h4 className="text-sm font-semibold text-white uppercase font-mono tracking-wider flex items-center gap-2">
+                    <Play size={12} className="text-emerald-400 fill-emerald-400" />
+                    <span>{t.projects.modal.videoDemoTitle}</span>
+                  </h4>
+                </div>
+                <div className="relative rounded-2xl overflow-hidden liquid-glass border border-white/10 aspect-video shadow-2xl bg-black/80 flex items-center justify-center">
+                  <video
+                    key={selectedProject.videoUrl}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-full object-contain"
+                  >
+                    <source src={selectedProject.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            )}
 
             {/* Architecture breakdown */}
             <div className="space-y-2.5">
