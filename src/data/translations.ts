@@ -213,7 +213,8 @@ export const translations: Record<Language, TranslationData> = {
             'ChromaDB Vector Store dengan penyimpanan persisten'
           ],
           metrics: '< 450ms latensi pencarian semantik pada 10.000+ chunks',
-          githubUrl: 'https://github.com/Yogiri19/Enterprise-Knowledge-Assistant-RAG-System-'
+          githubUrl: 'https://github.com/Yogiri19/Enterprise-Knowledge-Assistant-RAG-System-',
+          videoUrl: './videos/knowledge_rag_demo.mp4'
         },
         {
           id: 'vegetable-detection',
@@ -400,7 +401,8 @@ Apa yang ingin Anda ketahui tentang Yogiri?`,
             'ChromaDB Vector Store with persistent storage'
           ],
           metrics: '< 450ms semantic retrieval latency on 10k+ chunk repositories',
-          githubUrl: 'https://github.com/Yogiri19/Enterprise-Knowledge-Assistant-RAG-System-'
+          githubUrl: 'https://github.com/Yogiri19/Enterprise-Knowledge-Assistant-RAG-System-',
+          videoUrl: './videos/knowledge_rag_demo.mp4'
         },
         {
           id: 'vegetable-detection',
